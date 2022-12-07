@@ -4,91 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up</title>
   </head>
   <body>
-    <div class="splashimg">
-      <img src="./images/Screenshot 2022-12-06 003657.png" />
-      <div class="title">
-        <p>Join the life!</p>
+    <header class="hero">
+      <img src="images/IMG_8207.jpg" alt="" />
+      <div class="hero-head">
+        <h1>Join the Life</h1>
       </div>
-    </div>
-    <div class="main">
-      <div class="sitetext">
-        <p class="big">This is not a real service!</p>
+    </header>
+    <main class="main-content">
+      <div class="description">
+        <p>
+          Not a real online service! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Officiis alias aut veritatis animi. Enim adipisci
+          soluta ipsum optio omnis natus, est quos cum?
+        </p>
+        <p>Join a better Life</p>
       </div>
-      <form action="" method="post">
-        <div class="r1">
+      <div class="form-section">
+        <p>Let's do this!</p>
+        <form action="#" id="signup-form">
           <div>
-            <label for="first_name">First name</label>
-            <input
-              required
-              tpye="text"
-              id="first_name"
-              autocomplete="given-name"
-              placeholder="Max"
-            />
+            <p><label for="first-name">First Name</label></p>
+            <input type="text" name="first_name" id="first-name" />
           </div>
           <div>
-            <label for="last_name">Last name</label>
-            <input
-              required
-              type="text"
-              id="last_name"
-              autocomplete="family-name"
-              placeholder="Mustermann "
-            />
-          </div>
-        </div>
-        <div class="r2">
-          <div>
-            <label for="email">E-Mail</label>
-            <input
-              required
-              type="email"
-              id="email"
-              autocpmplete="email"
-              placeholder="MaxMust@gmail.com"
-            />
+            <p><label for="last-name">Last Name</label></p>
+            <input type="text" name="last_name" id="last-name" />
           </div>
           <div>
-            <label for="phone">Phone Number</label>
-            <input
-              required
-              type="tel"
-              id="phone"
-              autocomplete="tel"
-              pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-              placeholder="+491741234567"
-              oninvalid="this.setCustomValidity('Please use + (49)-1234567')"
-              oninput="this.setCustomValidity('')"
-            />
+            <p><label for="email">Email</label></p>
+            <input type="email" name="email" id="email" />
           </div>
-        </div>
-        <div class ="r3">
-            <div>
-                <label for="password">Password</label>
-                <input required type="password" id="password" autocomplete="new-password" placeholder="">
-                </div>
-                <div>
-                    <label for ="confirm_password">Confirm Password</label>
-                    <input required type="password" id="confirm_password" autocomplete="new-password" placeholder="">
-                </div>
-            </div>
-        </div>
-        <fieldset>
-            <div class="shadow"></div>
-            <input type ="submit" id="submit" value="Create Account">
-
-        </fieldset>
-      </form>
-    </div>
+          <div>
+            <p><label for="phone">Phone Number</label></p>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div>
+            <p><label for="password">Password</label></p>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <p>
+              <label for="confirm-pass">Confirm Password</label>
+            </p>
+            <input type="password" name="" id="confirm-pass" />
+          </div>
+        </form>
+      </div>
+      <div class="submit-section">
+        <button type="submit" form="signup-form">Submit</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </main>
   </body>
 </html>
